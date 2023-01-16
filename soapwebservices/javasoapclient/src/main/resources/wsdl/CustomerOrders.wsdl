@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://soap.ws.bharath.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://trainings.ws.bharath.com/" name="CustomerOrdersWsImplService" targetNamespace="http://soap.ws.bharath.com/">
-  <wsdl:import location="http://localhost:8080/wsdlfirstws/customerordersservice?wsdl=CustomerOrdersPortType.wsdl" namespace="http://trainings.ws.bharath.com/">
+  <wsdl:import location="http://localhost:8080/wsdlfirstws/services/customerordersservice?wsdl" namespace="http://trainings.ws.bharath.com/">
     </wsdl:import>
   <wsdl:binding name="CustomerOrdersWsImplServiceSoapBinding" type="ns1:CustomerOrdersPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
@@ -24,7 +24,7 @@
   </wsdl:binding>
   <wsdl:service name="CustomerOrdersWsImplService">
     <wsdl:port binding="tns:CustomerOrdersWsImplServiceSoapBinding" name="CustomerOrdersWsImplPort">
-      <soap:address location="http://localhost:8080/wsdlfirstws/customerordersservice"/>
+      <soap:address location="http://localhost:8082/wsdlfirstws/customerordersservice"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

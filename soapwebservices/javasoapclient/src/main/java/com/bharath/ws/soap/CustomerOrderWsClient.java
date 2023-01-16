@@ -14,7 +14,7 @@ public class CustomerOrderWsClient {
 
 	public static void main(String[] args) throws MalformedURLException {
 		CustomerOrdersWsImplService service = new CustomerOrdersWsImplService(
-				new URL("http://localhost:8080/wsdlfirstws/customerordersservice?wsdl"));
+				new URL("http://localhost:8080/wsdlfirstws/services/customerordersservice?wsdl"));
 		CustomerOrdersPortType customerOrdersWsImplPort = service.getCustomerOrdersWsImplPort();
 
 		GetOrdersRequest request = new GetOrdersRequest();

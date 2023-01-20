@@ -7,6 +7,7 @@ Orden de ejecución para servicios SOAP:
 6. mtom
 7. wsdlfirstws (ahora con handlers)
 8. javafirstws (ahora con Fault Exception)
+9. productcrud
 
 Referencia:
 
